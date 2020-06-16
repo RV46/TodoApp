@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="username">Username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <!--    <string name="login">Login</string>-->
+</resources>

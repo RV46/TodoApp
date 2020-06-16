@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cool"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/AppTheme"
+    tools:context=".AddEditNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="586dp"
+        android:layout_margin="10dp"
+        android:background="#E2FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Edit the Note"
+            android:textColor="#4BDF16"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#4BDF16"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Title"
+            android:inputType="text"
+            android:textColor="#4BDF16"
+            android:textColorHighlight="#4BDF16"
+            android:textColorHint="#4BDF16" />
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="#4BDF16"
+            android:textColorHint="#4BDF16"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_text_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:textColor="#4BDF16"
+            android:textColorHighlight="#4BDF16"
+            android:textColorHint="#4BDF16" />
+
+        <TextView
+            android:id="@+id/tvLblIsClosed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is Complete?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#4BDF16"
+            android:textColorHighlight="#4BDF16" />
+
+        <EditText
+            android:id="@+id/chkbxIsComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Status"
+            android:inputType="text"
+            android:textColor="#4BDF16"
+            android:textColorHighlight="#4BDF16"
+            android:textColorHint="#4BDF16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLblTestDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#4BDF16"
+            android:textColorHighlight="#4BDF16"
+            android:textColorHint="#4BDF16" />
+
+        <EditText
+            android:id="@+id/InputTodoDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:ems="10"
+            android:enabled="true"
+            android:focusable="false"
+            android:hint="Add desired date "
+            android:inputType="none"
+            android:longClickable="false"
+            android:textColor="#4BDF16"
+            android:textColorHighlight="#4BDF16"
+            android:textColorHint="#4BDF16" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Priority: "
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="#4BDF16"
+            android:textColorHighlight="#4BDF16"
+            android:textColorHint="#4BDF16" />
+
+        <NumberPicker
+            android:id="@+id/number_picker_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="121dp"
+            android:textColor="#4BDF16"></NumberPicker>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--linear layout to wrap everything-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/as3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    adding logo for app-->
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="image"
+        app:srcCompat="@drawable/todogif" />
+
+
+    <!--    text message for user-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="344dp"
+        android:background="@drawable/background_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="If you're user then SignIn"
+            android:textColor="#090909"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <!--    input fields for username and password -->
+
+        <!--    login button-->
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="247dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="27dp"
+            android:drawableLeft="@drawable/login_small"
+            android:hint="@string/username"
+            android:textColor="#000000"
+            android:textColorHint="#0E0E0D" />
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="244dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:drawableLeft="@drawable/password_small"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#0B0A0A" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="123dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rec_gradient"
+            android:text="sign in"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/textview_register"
+            android:layout_width="123dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rec_gradient"
+            android:text="sign up"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Copyright &#169; Ravi Gopali 2020"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

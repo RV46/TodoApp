@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easy_todo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.easy_todo.MvvmMainActivity"/>
+        <activity android:name="com.example.easy_todo.AddEditNoteActivity"/>
+        <activity android:name="com.example.easy_todo.mvvm.AdminLoginActivity"/>
+        <activity android:name="com.example.easy_todo.fragment.FragmentActivity"/>
+        <activity android:name="com.example.easy_todo.RecyclerViewAdapter"/>
+        <activity android:name="com.example.easy_todo.MvvmActivity" />
+        <activity android:name="com.example.easy_todo.EditActivity"/>
+        <activity android:name="com.example.easy_todo.TodoDetailActivity" />
+        <activity android:name="com.example.easy_todo.AddTodoActivity" />
+        <activity android:name="com.example.easy_todo.HomeActivity" />
+        <activity android:name="com.example.easy_todo.RegisterActivity" />
+        <activity android:name="com.example.easy_todo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Note: sending data from xml to view model-->
+
+<!--mvvvm xml interacts with view model-->
+<!--view model interacts with model-->
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<!--    two way data binding -->
+<!--    also sets and gets data-->
+    <data>
+        <variable
+            name="userModel"
+            type="com.example.easy_todo.mvvm.viewmodel.UserViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mm"
+        android:foregroundGravity="center"
+        android:padding="20dp"
+        tools:context="com.example.todo_today.mvvm.AdminLoginActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Login Panel"
+            android:textColor="#F5F5F8"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/admin_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.532" />
+
+        <EditText
+            android:id="@+id/admin_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="208dp"
+            android:background="#8D0097A7"
+            android:hint="Enter Admin Email"
+            android:inputType="textEmailAddress"
+            android:padding="20px"
+            android:text="@={userModel.admin_email}"
+            android:textColor="#FCFFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/admin_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:background="#8D0097A7"
+            android:hint="Enter Admin Password"
+            android:inputType="textPassword"
+            android:padding="20px"
+            android:text="@={userModel.admin_password}"
+            android:textColor="#FDFEFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/admin_email" />
+
+        <Button
+            android:id="@+id/admin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:background="#B00288D1"
+            android:onClick="@{() -> userModel.onSubmitClick()}"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/admin_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
