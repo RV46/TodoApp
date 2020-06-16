@@ -1,8 +1,23 @@
-# Todo-App
+# TodoApp
 Final Android project of college
 # About the App
 The todo-app is an app where a user can add their daily task or list of thing to be done. The user needs to first register in order to signin. The user can add, edit and delete their todo list. The app has two different type of todo which are with orm and without the orm.
-# Features available in the Todo-App
+# Screenshots of TodoApp
+<img src="Screenshot_1592300532.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300848.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300865.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300871.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300880.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300893.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300897.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300912.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300917.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300933.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300937.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300948.png" width="350" height="600" title="Github Logo">
+<img src="Screenshot_1592300959.png" width="350" height="600" title="Github Logo">
+
+# Features available in the TodoApp
 1. Two types of todo app with ORM and without ORM
 2. Signin and registration with validations
 3. User dashboard for conduction todo activity
